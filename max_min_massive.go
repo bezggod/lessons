@@ -11,17 +11,16 @@ func main() {
 }
 
 func maxMin() (int, int) {
-	arr := [7]int{1, 20, 8, 3, 19, 99, 6}
-	min := arr[0]
-	max := arr[0]
-	for _, value := range arr {
-		if value > min {
-			min = value
+	numbers := [5]int{1, 2, 3, 4, 5}
+	min := numbers[0]
+	max := numbers[0]
+	for _, number := range numbers {
+		if number > max {
+			max = number
 		}
-		if value < max {
-			max = value
+		if number < min {
+			min = number
 		}
 	}
-	return max, min
-
+	return min, max
 }
