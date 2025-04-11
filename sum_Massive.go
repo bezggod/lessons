@@ -1,17 +1,14 @@
 package main /* Напишите функцию, которая принимает массив
 целых чисел и возвращает сумму всех его элементов.*/
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(massive1())
-
+	fmt.Println(massive())
 }
 
-func massive1() int {
-	numbers := [...]int{1, 3, 4, 7, 8}
+func massive() int {
+	numbers := [5]int{1, 2, 3, 4, 5}
 	sum := 0
 	for _, value := range numbers {
 		sum += value
