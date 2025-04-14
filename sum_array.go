@@ -4,10 +4,10 @@ package main /* Напишите функцию, которая принимае
 import "fmt"
 
 func main() {
-	fmt.Println(massive())
+	fmt.Println(arrays())
 }
 
-func massive() int {
+func arrays() int {
 	numbers := [5]int{1, 2, 3, 4, 5}
 	sum := 0
 	for _, value := range numbers {
